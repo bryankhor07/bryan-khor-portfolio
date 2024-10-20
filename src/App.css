@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-color: #f8f8f8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav--container {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Align it to the top of the page */
+  left: 0; /* Align it to the left edge */
+  right: 0; /* Align it to the right edge */
+  background-color: #e6e6fa; /* Add your preferred background color */
+  padding: 1rem; /* Space around the navbar */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+  font-family: "Roboto", sans-serif; /* Optional font */
+  z-index: 1000; /* Ensure it stays above other elements */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav--list {
+  display: flex; /* Flexbox to align items */
+  justify-content: space-between; /* Spreads out the logo and links */
+  align-items: center; /* Vertically aligns items in the center */
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0 2rem 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav--logo {
+  margin-right: auto; /* Ensures the logo stays on the left */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio--logo {
+  height: 50px; /* Adjust height to your liking */
+  border-radius: 50px;
+}
+
+.nav--list li {
+  margin-left: 2rem; /* Spacing between each nav link */
+}
+
+.nav--list a {
+  text-decoration: none; /* Removes underline */
+  color: #333; /* Text color */
+  font-size: 1.1rem; /* Adjust font size */
+  font-weight: bold; /* Bold text for nav links */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav--list a:hover {
+  color: #b8860b; /* Change color on hover */
+}
+
+.hire--me {
+  background-color: #000000; /* Button background color */
+  padding: 0.5rem 1rem; /* Padding around text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Adjust font size */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+.hire--me a {
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+}
+
+.home--container {
+  display: flex; /* Use flexbox to arrange children in a row */
+  justify-content: space-between; /* Space between the content and image */
+  align-items: center; /* Center the content vertically */
+  padding: 100px 50px 50px 50px; /* Optional padding */
+  min-height: 600px;
+}
+
+.home--title {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 1rem; /* Space between title and text */
+}
+
+.home--content {
+  flex: 1; /* Allow the content to take available space */
+  max-width: 50%; /* Optional: limit the width of the content */
+}
+
+.home--links {
+  display: flex; /* Ensures both buttons are side by side */
+  align-items: center; /* Vertically aligns buttons */
+}
+
+.home--hire--me {
+  background-color: #000000; /* Button background color */
+  padding: 0.4rem 2rem; /* Padding around text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Adjust font size */
+  font-weight: bold;
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth color change on hover */
+  color: white; /* Text color */
+  height: 36px;
+  text-decoration: none; /* Removes underline */
+  margin-right: 20px;
+}
+
+.home--hire--me:hover {
+  color: #b8860b; /* Darker background on hover */
+}
+
+.resume--button {
+  background-color: #b3bdb3; /* Button background color */
+  color: black; /* Text color */
+  padding: 0.4rem 2rem;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Adjust font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 36px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.resume--button:hover {
+  color: #b8860b; /* Darker background on hover */
+}
+
+.resume--button i {
+  margin-left: 2px; /* Space between icon and text */
+  font-size: 1rem; /* Adjust icon size */
+  vertical-align: middle; /* Align icon with text */
+}
+
+.home--icons {
+  display: flex; /* Flexbox to align icons */
+  margin-top: 1rem; /* Space between text and icons */
+}
+
+.home--icons a {
+  margin-right: 20px; /* Space between each icon */
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #000000; /* Icon color (change as needed) */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.home--icons a:hover {
+  transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+.home--image {
+  flex: 1; /* Allow the image to take available space */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.home--image img {
+  width: 500px;
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 400px;
+}
+
+.skills--container {
+  padding: 80px 20px 20px 20px; /* Padding around the section */
+  min-height: 600px;
+}
+
+.skills--title {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 2rem; /* Title font size */
+  color: #333; /* Title color */
+  border-bottom: 5px solid #b8860b; /* Gold line under the title */
+  padding-bottom: 10px; /* Space between text and the line */
+}
+
+.skills--content {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between lists */
+  flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.skills--list {
+  flex: 1; /* Allow each list to grow equally */
+  min-width: 250px; /* Minimum width to avoid too narrow columns */
+  margin: 10px; /* Space around each list */
+  padding: 20px; /* Padding inside each list */
+  border: 1px solid #ddd; /* Border around each list */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  background-color: #ffffff; /* Background color for lists */
+}
+
+.skills--list h3 {
+  border-bottom: 5px solid #b8860b; /* Gold line under the title */
+  margin-bottom: 10px; /* Space below the header */
+  font-size: 1.5rem; /* Header font size */
+  color: #333; /* Header color */
+  padding-bottom: 10px;
+}
+
+.skills--list ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.skills--list li {
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.skills--list li i {
+  margin-right: 10px; /* Space between icon and text */
+  color: #b8860b; /* Icon color (darker gold) */
+  width: 20px; /* Set a fixed width for the icon */
 }
