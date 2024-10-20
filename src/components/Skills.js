@@ -21,9 +21,6 @@ export default function Skills() {
             <li>
               <i className="fab fa-bootstrap"></i> Bootstrap
             </li>
-            <li>
-              <i className="fab fa-figma"></i> Figma
-            </li>
           </ul>
         </div>
         <div className="skills--list">
@@ -57,6 +54,9 @@ export default function Skills() {
             </li>
             <li>
               <i className="fas fa-code"></i> VS Code
+            </li>
+            <li>
+              <i className="fab fa-figma"></i> Figma
             </li>
           </ul>
         </div>
