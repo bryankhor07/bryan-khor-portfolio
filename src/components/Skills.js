@@ -56,6 +56,9 @@ export default function Skills() {
               <i className="fas fa-code"></i> VS Code
             </li>
             <li>
+              <i className="fas fa-database"></i> MySQL Workbench
+            </li>
+            <li>
               <i className="fab fa-figma"></i> Figma
             </li>
           </ul>
