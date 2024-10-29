@@ -280,13 +280,13 @@ html {
   }
 }
 
-.tenzies--photo {
+.project--photo {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-.tenzies--container {
+.project--container {
   position: relative;
   display: inline-block;
 }
@@ -315,7 +315,7 @@ html {
   transition: opacity 0.3s ease;
 }
 
-.tenzies--container:hover .overlay--text {
+.project--container:hover .overlay--text {
   opacity: 1; /* Show text on hover */
 }
 
