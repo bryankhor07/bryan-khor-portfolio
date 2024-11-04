@@ -1,5 +1,6 @@
 import TenziesPhoto from "../images/TenziesApp.png";
 import WeatherAppPhoto from "../images/WeatherAppPhoto.png";
+import ExpenseTrackerPhoto from "../images/ExpenseTrackerPhoto.png";
 
 export default function Projects() {
   return (
@@ -43,11 +44,24 @@ export default function Projects() {
           <h3>Weather App: A site for everyone</h3>
         </div>
         <div className="projects--list">
-          <h3>Project 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            pulvinar, nisl ac tincidunt tincidunt, sapi
-          </p>
+          <a
+            href="https://expense-tracker-c3464.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project--container"
+          >
+            <img
+              src={ExpenseTrackerPhoto}
+              alt="Expense Tracker"
+              className="project--photo"
+            />
+            <div className="overlay--text">
+              An expense tracker that allows users to add and delete expenses,
+              as well as view the total balance. Developed with React and
+              Firebase for a seamless and efficient experience.
+            </div>
+          </a>
+          <h3>Expense Tracker: Track, Save, and Succeed!</h3>
         </div>
         <div className="projects--list">
           <h3>Project 4</h3>
