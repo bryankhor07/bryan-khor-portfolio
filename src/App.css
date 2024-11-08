@@ -281,9 +281,10 @@ html {
 }
 
 .project--photo {
-  width: 100%;
-  height: auto;
+  width: 25rem;
+  height: 12.5rem; /* Set a fixed height that suits your design */
   border-radius: 5px;
+  object-fit: contain;
 }
 
 .project--container {
