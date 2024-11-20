@@ -281,7 +281,7 @@ html {
 }
 
 .project--photo {
-  width: 25rem;
+  width: 100%; /* Full width for the image */
   height: 12.5rem; /* Set a fixed height that suits your design */
   border-radius: 5px;
   object-fit: contain;

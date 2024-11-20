@@ -1,6 +1,7 @@
 import TenziesPhoto from "../images/TenziesApp.png";
 import WeatherAppPhoto from "../images/WeatherAppPhoto.png";
 import ExpenseTrackerPhoto from "../images/ExpenseTrackerPhoto.png";
+import RecipeAppPhoto from "../images/Recipe.ioHomePage.png";
 
 export default function Projects() {
   return (
@@ -64,11 +65,26 @@ export default function Projects() {
           <h3>Expense Tracker: Track, Save, and Succeed!</h3>
         </div>
         <div className="projects--list">
-          <h3>Project 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            pulvinar, nisl ac tincidunt tincidunt, sapi
-          </p>
+          <a
+            href="https://online-recipe-19b1d.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project--container"
+          >
+            <img
+              src={RecipeAppPhoto}
+              alt="Recipe.ior"
+              className="project--photo"
+            />
+            <div className="overlay--text">
+              A recipe-sharing platform where users can explore, create, and
+              favorite recipes. Features include dark mode, user ratings, user
+              comments and a surprise recipe generator. Built using React,
+              Firebase, and Cloud Firestore to deliver a dynamic and
+              user-friendly experience.
+            </div>
+          </a>
+          <h3>Recipe.io: It's time to get cooking!</h3>
         </div>
         <div className="projects--list">
           <h3>Project 5</h3>
