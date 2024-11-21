@@ -27,6 +27,7 @@ html {
   display: flex; /* Flexbox to align items */
   justify-content: space-between; /* Spreads out the logo and links */
   align-items: center; /* Vertically aligns items in the center */
+  justify-content: center;
   list-style-type: none; /* Removes default bullet points */
   padding: 0;
   margin: 0 2rem 0 0;
@@ -78,6 +79,7 @@ html {
   align-items: center; /* Center the content vertically */
   padding: 120px 50px 50px 50px; /* Optional padding */
   min-height: 600px;
+  gap: 2rem;
 }
 
 .home--title {
@@ -273,7 +275,7 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 530px) {
   .projects--list {
     flex-basis: 100%; /* One project per row on small screens */
     max-width: 100%;
@@ -403,6 +405,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .contact--title {
@@ -450,4 +453,101 @@ html {
 
 .footer p {
   margin: 0; /* Remove default margin */
+}
+
+@media screen and (max-width: 750px) {
+  .home--title {
+    font-size: 2rem; /* Smaller title font size */
+  }
+  .home--description {
+    font-size: 0.8rem; /* Smaller description font size */
+  }
+  .home--links {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .home--hire--me,
+  .resume--button {
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 0.3rem 1.5rem; /* Adjust padding */
+    font-size: 0.7rem; /* Adjust font size */
+    height: auto; /* Allow height to adjust naturally */
+  }
+
+  .portfolio--logo {
+    height: 40px; /* Adjust height to your liking */
+    border-radius: 50px;
+  }
+
+  .nav--list {
+    margin: 0;
+  }
+
+  .nav--list li {
+    margin-left: 1rem; /* Spacing between each nav link */
+  }
+
+  .nav--list a {
+    font-size: 0.7rem; /* Adjust font size */
+  }
+
+  .hire--me {
+    padding: 0.5rem 1rem; /* Padding around text */
+    font-size: 0.7rem; /* Adjust font size */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .social--links a {
+    font-size: 1.5rem; /* Smaller icon size on smaller screens */
+  }
+  .home--title {
+    font-size: 1.8rem; /* Smaller title font size */
+  }
+  .home--description {
+    font-size: 0.7rem; /* Smaller description font size */
+  }
+  .home--links {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .home--hire--me,
+  .resume--button {
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 0.3rem 1.5rem; /* Adjust padding */
+    font-size: 0.7rem; /* Adjust font size */
+    height: auto; /* Allow height to adjust naturally */
+  }
+
+  .home--image {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+
+  .home--image img {
+    width: 70vw; /* Use relative width for responsiveness */
+    max-width: 100%; /* Ensure it doesn’t exceed the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+  }
+
+  .nav--list {
+    margin: 0;
+  }
+
+  .nav--list li {
+    margin-left: 0.8rem; /* Spacing between each nav link */
+  }
+
+  .nav--list a {
+    font-size: 0.5rem; /* Adjust font size */
+  }
+
+  .hire--me {
+    margin-top: 5px;
+    padding: 0.2rem 0.5rem; /* Padding around text */
+    font-size: 0.5rem; /* Adjust font size */
+  }
 }
