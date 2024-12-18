@@ -2,6 +2,7 @@ import TenziesPhoto from "../images/TenziesApp.png";
 import WeatherAppPhoto from "../images/WeatherAppPhoto.png";
 import ExpenseTrackerPhoto from "../images/ExpenseTrackerPhoto.png";
 import RecipeAppPhoto from "../images/Recipe.ioHomePage.png";
+import RoomieFinderPhoto from "../images/RoomieFinderLandingPage.png";
 
 export default function Projects() {
   return (
@@ -87,11 +88,26 @@ export default function Projects() {
           <h3>Recipe.io: It's time to get cooking!</h3>
         </div>
         <div className="projects--list">
-          <h3>Project 5</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            pulvinar, nisl ac tincidunt tincidunt, sapi
-          </p>
+          <a
+            href="http://3.212.144.77/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project--container"
+          >
+            <img
+              src={RoomieFinderPhoto}
+              alt="Recipe.ior"
+              className="project--photo"
+            />
+            <div className="overlay--text">
+              A roommate-finding platform where users can find for their perfect
+              roommate. Features include user profiles, real-time chat
+              capabilities, role-based access, and dynamic listings. Built using
+              React, JavaScript, and Node.js for an intuitive and responsive
+              interface.
+            </div>
+          </a>
+          <h3>RoomieFinder: Find your perfect roommate today!</h3>
         </div>
         <div className="projects--list">
           <h3>Project 6</h3>
