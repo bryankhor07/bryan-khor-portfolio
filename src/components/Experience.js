@@ -19,6 +19,7 @@ export default function Experience() {
             extensive research and multiple attempts to resolve the encountered
             errors.
           </p>
+          <p>Angular | HTML | CSS </p>
         </div>
         <div className="experience--detail">
           <h3 className="experience--position">Software Engineer Intern</h3>
@@ -32,6 +33,7 @@ export default function Experience() {
             utilizing lifecycle hooks and directives to dynamically display
             descriptions.
           </p>
+          <p>Vue.js | HTML</p>
         </div>
         <div className="experience--detail">
           <h3 className="experience--position">Software Lab Instructor</h3>
@@ -45,20 +47,7 @@ export default function Experience() {
             enhanced their understanding and performance, resulting in a 15%
             improvement in average assignment scores over the semester.
           </p>
-        </div>
-        <div className="experience--detail">
-          <h3 className="experience--position">Resident Assistant</h3>
-          <p className="experience--company">San Francisco State University</p>
-          <p className="experience--dates">August 2023 - Present</p>
-          <p className="experience--description">
-            As a Resident Assistant since August 2023, I have fostered an open
-            and inclusive community by building strong relationships with
-            residents, managing conflicts, and tracking and reporting
-            intentional interactions while offering resources to students in
-            need. I have also upheld the Student Code of Conduct and Community
-            Living Standards, assisting in crisis and emergency situations to
-            ensure the safety and well-being of all students.
-          </p>
+          <p>Java | Collaboration | Tutoring | Classroom Based Teaching</p>
         </div>
       </div>
     </section>

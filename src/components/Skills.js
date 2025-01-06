@@ -41,6 +41,9 @@ export default function Skills() {
             <li>
               <i className="fas fa-link"></i> RESTful APIs
             </li>
+            <li>
+              <i className="fas fa-database"></i>Firebase
+            </li>
           </ul>
         </div>
         <div className="skills--list">
@@ -60,6 +63,32 @@ export default function Skills() {
             </li>
             <li>
               <i className="fab fa-figma"></i> Figma
+            </li>
+          </ul>
+        </div>
+        <div className="skills--list">
+          <h3>Languages</h3>
+          <ul>
+            <li>
+              <i className="fab fa-js"></i> JavaScript
+            </li>
+            <li>
+              <i className="fas fa-code"></i>TypeScript
+            </li>
+            <li>
+              <i className="fab fa-python"></i> Python
+            </li>
+            <li>
+              <i className="fab fa-java"></i> Java
+            </li>
+            <li>
+              <i className="fab fa-c"></i>C++
+            </li>
+            <li>
+              <i className="fab fa-html5"></i> HTML
+            </li>
+            <li>
+              <i className="fab fa-css3-alt"></i> CSS
             </li>
           </ul>
         </div>

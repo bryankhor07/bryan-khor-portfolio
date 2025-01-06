@@ -86,20 +86,6 @@ export default function Projects() {
           </a>
           <h3>Recipe.io: It's time to get cooking!</h3>
         </div>
-        <div className="projects--list">
-          <h3>Project 6</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            pulvinar, nisl ac tincidunt tincidunt, sapi
-          </p>
-        </div>
-        <div className="projects--list">
-          <h3>Project 6</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            pulvinar, nisl ac tincidunt tincidunt, sapi
-          </p>
-        </div>
       </div>
     </section>
   );
